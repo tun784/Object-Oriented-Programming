@@ -4,16 +4,28 @@ namespace Bai2{
     public class NgayThang{
         private int day, month, year;
         public int d {
-            get { return d; }
-            set { day = value }
+            get { 
+                return d;  
+            }
+            set {
+                day = value;
+            }
         }
         public int m {
-            get { return m; }
-            set { month = m;}
+            get { 
+                return m;
+            }
+            set {
+                month = value;
+            }
         }
         public int y {
-            get { return y; }
-            set { year = y; }
+            get { 
+                return y;
+            }
+            set {
+                year = value;
+            }
         }
 
         public NgayThang(NgayThang date){
