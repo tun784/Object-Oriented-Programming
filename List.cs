@@ -1,7 +1,7 @@
 using System.IO;
 using System.Linq;
-namespace Bai1 {
-    class program {
+namespace List_inOOP {
+    class _Program {
         /// <summary>
         /// 1. Sum all elements in the list
         /// 2. Count even numbers
@@ -9,12 +9,12 @@ namespace Bai1 {
         /// 3. List of numbers that divisible by 5
         /// 4. Find an integer number inputed from keyboard
         /// </summary>
-        static void Main() {
+        static void main() {
             // Initialize list
             List<int> danhsach= new List<int>();
             // Input every elements into the list
             int size = int.Parse(Console.ReadLine());
-            for (int i=0; i<size; i++) {
+            for (int i = 0; i < size; i++) {
                 int x = int.Parse(Console.ReadLine());
                 danhsach.Add(x);
             }
@@ -40,11 +40,10 @@ namespace Bai1 {
             //4. Find an integer number inputed from keyboard
             int y = int.Parse(Console.ReadLine());
             int result = danhsach.FirstOrDefault(x => x == y);
-            if (result == null) {
+            if (result == null) 
                 Console.WriteLine("Unable to find out {0}", y);
             else
                     Console.WriteLine("{0} was found.", y);
-            }
         }
     }
 }

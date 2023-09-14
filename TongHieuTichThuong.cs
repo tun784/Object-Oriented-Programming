@@ -1,8 +1,8 @@
-﻿using System.IO;
+﻿using System;
 
-namespace Bai1 {
-    class program {
-        static void Main() {
+namespace Basic_calculate{
+    class _Program{
+        static void main() {
             int a, b;
             Console.WriteLine("Nhap hai so nguyen bat ky.");
             Console.Write("Moi nhap so thu nhat: ");
