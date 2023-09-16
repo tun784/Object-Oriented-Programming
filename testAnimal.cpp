@@ -8,7 +8,7 @@ class Animal {
     int age;
   // Declare some public methods
   public:
-    // Constructor that takes name and age as parameters
+    // Constructor that takes name and age as parameters  
     Animal(string n, int a) {
       name = n;
       age = a;

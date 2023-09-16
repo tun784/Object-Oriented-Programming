@@ -2,7 +2,7 @@
 
 namespace Basic_calculate{
     class _Program{
-        static void Main()
+        static void _Main()
         {
             int a, b;
             Console.WriteLine("Nhap hai so nguyen bat ky.");
@@ -18,7 +18,7 @@ namespace Basic_calculate{
             int hieu = a - b;
             int tich = a * b;
             float thuong = (float) a / b;
-            Console.WriteLine("Tong= {0}, Hieu= {1}, Tich= {2}, Thuong= {3}.", tong, hieu, tich, thuong);
+            Console.WriteLine($"Tong= {tong}, Hieu= {hieu}, Tich= {tich}, Thuong= {thuong}.");
         }
     }
 }

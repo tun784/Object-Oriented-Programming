@@ -9,7 +9,7 @@ namespace List_inOOP {
         /// 3. List of numbers that divisible by 5
         /// 4. Find an integer number inputed from keyboard
         /// </summary>
-        static void Main()
+        static void _Main()
         {
             // Initialize list
             List<int> danhsach= new List<int>();
@@ -21,7 +21,7 @@ namespace List_inOOP {
             }
             // Show all elements in the list
             foreach (int element in danhsach) {
-                Console.Write("List: ", element);
+                Console.Write("List: {0}", element);
             }
             Console.ReadLine();
             //1. Sum all elements in the list
