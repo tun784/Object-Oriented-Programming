@@ -2,7 +2,8 @@
 
 namespace Basic_calculate{
     class _Program{
-        static void main() {
+        static void Main()
+        {
             int a, b;
             Console.WriteLine("Nhap hai so nguyen bat ky.");
             Console.Write("Moi nhap so thu nhat: ");
