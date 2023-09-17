@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Basic_calculate{
-    class _Program{
+    class Program{
         static void _Main()
         {
             int a, b;

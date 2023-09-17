@@ -2,8 +2,9 @@ using System;
 namespace Animal{
     class Animal{
         string name;
-        int age, height, weight;
-        bool sex;
+        int age;
+        double height, weight;
+        string sex;
         // get - set
         public string _name{
             get { return name; }
@@ -13,37 +14,45 @@ namespace Animal{
             get { return age; }
             set { age = value; }
         }
-        public int _height{
+        public double _height{
             get { return height; }
             set { height = value; }
         }
-        public int _weight{
+        public double _weight{
             get { return weight; }
             set { weight = value; }
         }
-        public bool _sex{
+        public string _sex{
             get { return sex; }
             set { sex = value; }
         }
         // Phương thức khởi tạo
         public Animal(){
             name = "ANIMAL";
-            age = height = weight = 0;
-            sex = null;
+            age = 0;
+            height = weight = 0.0;
+            sex = "Unknown";
         }
-        public Animal(string name, int age, int height, int weight, bool sex){
+        public Animal(string name, int age, double height, double weight, string sex){
             this.name = name;
             this.age = age;
-            this. height = height;
+            this.height = height;
             this.weight = weight;
             this.sex = sex;
         }
-        // Phương thức xử lý
-        public void showName(){
-            Console.WriteLine($"{name}");
+        public Animal(Animal pet){
+            this.name = pet._name;
+            this.age = pet._age;
+            this.height = pet.height;
+            this.weight = pet._weight;
+            this.sex = pet._sex;
         }
-        public void showAge(){
-            Console.WriteLine($"{age}");
+        // Phương thức xử lý
+        public string showName(){
+            return this.name;
+        }
+        public int showAge(){
+            return this.age;
         }
         public void move(){
             Console.WriteLine("Animal is moving...");
@@ -55,7 +64,9 @@ namespace Animal{
     class Program{
         static void _Main()
         {
-
+            Animal pet01 = new Animal("Lion", 2, 0.9, 48.7, "Female");
+            Animal pet02 = new Animal("Tiger", 1, 0.8, 46.4, "Male");
+            Console.WriteLine("{0} and {1}", pet01.showName(), pet02.showName());
         }
     }
 }
