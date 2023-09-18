@@ -120,7 +120,7 @@ namespace BaiTap
 
     class Program
     {
-        static void Main()
+        static void _Main()
         {
             Console.WriteLine("Hinh Tron");
             Console.WriteLine("Ngay Thang");

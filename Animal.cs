@@ -51,7 +51,22 @@ namespace Animal{
         public void Input(){
             Console.Write("Nhap ten pet: ");
             name = Console.ReadLine();
-            Console.Write("");
+            Console.Write("Nhap tuoi: ");
+            age = int.Parse(Console.ReadLine());
+            Console.Write("Nhap chieu cao: ");
+            height = double.Parse(Console.ReadLine().Replace('.',','));
+            Console.Write("Nhap can nang: ");
+            weight = double.Parse(Console.ReadLine().Replace('.',','));
+            Console.Write("Nhap gioi tinh: ");
+            sex = Console.ReadLine();
+        }
+        public void Output(){
+            Console.WriteLine("Pet Info: ");
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Age: " + age);
+            Console.WriteLine("Height: {0:0.00}", height);
+            Console.WriteLine("Weight: {0:0.00}", weight);
+            Console.WriteLine("Sex: " + sex);
         }
         public string showName(){
             return this.name;
@@ -67,11 +82,14 @@ namespace Animal{
         }
     }
     class Program{
-        static void _Main()
+        static void Main()
         {
             Animal pet01 = new Animal("Lion", 2, 0.9, 48.7, "Female");
             Animal pet02 = new Animal("Tiger", 1, 0.8, 46.4, "Male");
             Console.WriteLine("{0} and {1}", pet01.showName(), pet02.showName());
+            Animal pet03 = new Animal();
+            pet03.Input();
+            pet03.Output();
         }
     }
 }
