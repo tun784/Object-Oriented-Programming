@@ -11,73 +11,72 @@ namespace BaiTap
         // Properties
         private double banKinh;
         // get - set
-        public double R
-        {
+        public double R{
             get { return banKinh; }
             set { banKinh = value; }
         }
         // Phương thức khởi tạo
-        public HinhTron()
-        {
+        public HinhTron(){
             banKinh = 0;
         }
-        public HinhTron(double R)
-        {
+        public HinhTron(double R){
             banKinh = R;
         }
-        public HinhTron(HinhTron hinh)
-        {
+        public HinhTron(HinhTron hinh){
             this.banKinh = hinh.banKinh;
         }
         // Phương thức xử lý
-        public void input()
-        {
+        public void input(){
             Console.Write("Nhap gia tri cho ban kinh: ");
             banKinh = double.Parse(Console.ReadLine().Replace('.',','));
             //banKinh = double.Parse(Console.ReadLine()); // Nhập vào một chuỗi string và ép kiểu double
         }
-        public void output()
-        {
+        public void output(){
             Console.WriteLine("Ban kinh ban vua nhap la {0}", banKinh);
         }
-        public double chuVi()
-        {
+        public double chuVi(){
             return this.banKinh * 2 * Math.PI;
             //return banKinh * 2 * Math.PI;
         }
-        public double dienTich()
-        {
+        public double dienTich(){
             return Math.Pow(this.banKinh, 2) * Math.PI;
             //return Math.Pow(banKinh, 2) * Math.PI;
         }
+        public double duongKinh(){
+            return this.banKinh * 2;
+        }
     }
-    class Diem2D
-    {
+    class Diem2D{
         int x, y;
         // get - set
-        public int diemX
-        {
+        public int diemX{
             get { return x; }
             set { x = value; }
         }
-        public int diemY
-        {
+        public int diemY{
             get { return y; }
             set { y = value; }
         }
         // Phương thức khởi tạo
-        public Diem2D()
-        {
+        public Diem2D(){
             x = y = 0;
         }
-        public Diem2D(int hoanhdo, int tungdo)
-        {
+        public Diem2D(int hoanhdo, int tungdo){
             x = hoanhdo;
             y = tungdo;
         }
+        public Diem2D(Diem2D diem){
+            this.x = diem.x;
+            this.y = diem.y;
+        }
         // Phương thức xử lý
-        public double KhoangCach_2Diem(Diem2D d)
-        {
+        public void Input(){
+            Console.Write("Nhap toa do x: ");
+            x = int.Parse(Console.ReadLine());
+            Console.Write("Nhap toa do y: ");
+            y = int.Parse(Console.ReadLine());
+        }
+        public double KhoangCach_2Diem(Diem2D d){
             return Math.Sqrt(Math.Pow(this.x - d.x, 2) + Math.Pow(this.y - d.y, 2));
         }
     }
@@ -121,7 +120,7 @@ namespace BaiTap
 
     class Program
     {
-        static void _Main()
+        static void Main()
         {
             Console.WriteLine("Hinh Tron");
             Console.WriteLine("Ngay Thang");
@@ -134,9 +133,10 @@ namespace BaiTap
             {
                 case 1:
                     {
-                        HinhTron circle_01 = new HinhTron(4.1);
+                        HinhTron circle_01 = new HinhTron();
                         circle_01.input();
                         circle_01.output();
+                        Console.WriteLine("Duong kinh hinh tron: {0:0.00}", circle_01.duongKinh());
                         Console.WriteLine("Chu vi hinh tron la: {0:0.00}", circle_01.chuVi());
                         Console.WriteLine("Dien tich hinh tron: {0:0.00}", circle_01.dienTich());
                     }
