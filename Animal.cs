@@ -48,6 +48,11 @@ namespace Animal{
             this.sex = pet._sex;
         }
         // Phương thức xử lý
+        public void Input(){
+            Console.Write("Nhap ten pet: ");
+            name = Console.ReadLine();
+            Console.Write("");
+        }
         public string showName(){
             return this.name;
         }
