@@ -13,7 +13,7 @@ namespace List_inOOP
         /// 3. List of numbers that divisible by 5
         /// 4. Find an integer number inputed from keyboard
         /// </summary>
-        static void _Main()
+        static void Main()
         {
             // Initialize list
             List<int> danhsach = new List<int>();

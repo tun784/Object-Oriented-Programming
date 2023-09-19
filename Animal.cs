@@ -89,6 +89,7 @@ namespace Animal{
             Console.WriteLine("{0} and {1}", pet01.showName(), pet02.showName());
             Animal pet03 = new Animal();
             pet03.Input();
+            Console.WriteLine("");
             pet03.Output();
         }
     }
