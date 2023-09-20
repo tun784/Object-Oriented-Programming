@@ -1,34 +1,35 @@
 using System;
-namespace Animal{
+
+namespace Object_Oriented_Programming{
     class Animal{
         string name;
         int age;
         double height, weight;
         string sex;
         // get - set
-        public string _name{
+        public string name_{
             get { return name; }
             set { name = value; }
         }
-        public int _age{
+        public int age_{
             get { return age; }
             set { age = value; }
         }
-        public double _height{
+        public double height_{
             get { return height; }
             set { height = value; }
         }
-        public double _weight{
+        public double weight_{
             get { return weight; }
             set { weight = value; }
         }
-        public string _sex{
+        public string sex_{
             get { return sex; }
             set { sex = value; }
         }
         // Phương thức khởi tạo
         public Animal(){
-            name = "ANIMAL";
+            name = "PET";
             age = 0;
             height = weight = 0.0;
             sex = "Unknown";
@@ -41,11 +42,11 @@ namespace Animal{
             this.sex = sex;
         }
         public Animal(Animal pet){
-            this.name = pet._name;
-            this.age = pet._age;
+            this.name = pet.name;
+            this.age = pet.age;
             this.height = pet.height;
-            this.weight = pet._weight;
-            this.sex = pet._sex;
+            this.weight = pet.weight;
+            this.sex = pet.sex;
         }
         // Phương thức xử lý
         public void Input(){
@@ -79,18 +80,6 @@ namespace Animal{
         }
         public void sleep(){
             Console.WriteLine("Animal is sleeping.");
-        }
-    }
-    class Program{
-        static void Main()
-        {
-            Animal pet01 = new Animal("Lion", 2, 0.9, 48.7, "Female");
-            Animal pet02 = new Animal("Tiger", 1, 0.8, 46.4, "Male");
-            Console.WriteLine("{0} and {1}", pet01.showName(), pet02.showName());
-            Animal pet03 = new Animal();
-            pet03.Input();
-            Console.WriteLine("");
-            pet03.Output();
         }
     }
 }

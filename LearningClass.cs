@@ -4,7 +4,8 @@ using System.Globalization;
 // using System.Linq;
 // using System.Text;
 // using System.Threading.Tasks;
-namespace BaiTap
+
+namespace Object_Oriented_Programming
 {
     class HinhTron
     {
@@ -115,50 +116,6 @@ namespace BaiTap
             if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
                 return true;
             else return false;
-        }
-    }
-
-    class Program
-    {
-        static void Main()
-        {
-            Console.WriteLine("Hinh Tron");
-            Console.WriteLine("Ngay Thang");
-            Console.WriteLine("Do thi 2 chieu");
-
-            int option;
-            Console.Write("Ban muon chon bai nao: ");
-            option = int.Parse(Console.ReadLine());
-            switch (option)
-            {
-                case 1:
-                    {
-                        HinhTron circle_01 = new HinhTron();
-                        circle_01.input();
-                        circle_01.output();
-                        Console.WriteLine("Duong kinh hinh tron: {0:0.00}", circle_01.duongKinh());
-                        Console.WriteLine("Chu vi hinh tron la: {0:0.00}", circle_01.chuVi());
-                        Console.WriteLine("Dien tich hinh tron: {0:0.00}", circle_01.dienTich());
-                    }
-                    break;
-                case 2:
-                    {
-                        NgayThang date_01 = new NgayThang(31, 12, 2021);
-                        if (date_01.checkLeapYear() == true)
-                            Console.WriteLine("Nam {0} la nam nhuan.", date_01.y);
-                        else
-                            Console.WriteLine("Nam {0} la nam khong nhuan.", date_01.y);
-                    }
-                    break;
-                case 3:
-                    {
-                        Diem2D point_01 = new Diem2D(2, 1);
-                        Diem2D point_02 = new Diem2D(4, 5);
-                        Console.WriteLine("Khoang cach giua 2 diem ({0},{1}) va ({2},{3}) la {4:0.00}.", point_01.diemX, point_01.diemY, point_02.diemX, point_02.diemY, point_01.KhoangCach_2Diem(point_02));
-                    }
-                    break;
-            }
-            //Console.ReadLine();
         }
     }
 }

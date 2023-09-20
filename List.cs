@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
-namespace List_inOOP
+namespace Object_Oriented_Programming
 {
     class Program
     {
