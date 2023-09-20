@@ -62,6 +62,5 @@ namespace LearningList
             
             Console.ReadLine();
         }
-
     }
 }
