@@ -5,7 +5,7 @@ using System.Globalization;
 // using System.Text;
 // using System.Threading.Tasks;
 
-namespace Object_Oriented_Programming
+namespace Class_basic
 {
     class HinhTron
     {

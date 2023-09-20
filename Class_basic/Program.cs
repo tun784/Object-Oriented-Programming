@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace Object_Oriented_Programming{
+namespace Class_basic{
     class Program{
         static void Main(){
             string choice;
@@ -56,11 +56,12 @@ namespace Object_Oriented_Programming{
 
                 Console.Write("Ban muon tiep tuc khong (Y/N)? ");
                 choice = Console.ReadLine();
-                while (!( choice == 'y' || choice == 'Y' || choice == 'n' || choice == 'N' ) ){
+                while (!( choice == "y" || choice == "Y" || choice == "n" || choice == "N" ) ){
                     Console.Write("Yeu cau khong hop le, xin vui long nhap lai: ");
                     choice = Console.ReadLine();
                 }
-            } while(choice == 'y' || choice == 'Y');
+            } while(choice == "y" || choice == "Y");
+            Console.WriteLine("Cam on ban da su dung san pham cua toi");
             //Console.ReadLine();
         }
     }

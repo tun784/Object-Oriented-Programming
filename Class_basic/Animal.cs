@@ -1,6 +1,6 @@
 using System;
 
-namespace Object_Oriented_Programming{
+namespace Class_basic{
     class Animal{
         string name;
         int age;

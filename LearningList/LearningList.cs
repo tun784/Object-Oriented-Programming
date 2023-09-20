@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
-namespace Object_Oriented_Programming
+namespace LearningList
 {
-    class Program
+    class program
     {
         /// <summary>
         /// 1. Sum all elements in the list
@@ -32,7 +32,7 @@ namespace Object_Oriented_Programming
             {
                 Console.Write(" {0}", element);
             }
-            Console.ReadLine();
+            Console.WriteLine("");
             //1. Sum all elements in the list
             int sum = danhsach.Sum();
             Console.WriteLine("Tong cac phan tu trong danh sach: {0}", sum);
@@ -44,18 +44,24 @@ namespace Object_Oriented_Programming
             Console.WriteLine("So luong so chan trong danh sach: {0}", countEvenNumbers);
             //3. List of numbers that divisible by 3
             List<int> danhsach1 = danhsach.Where(t => t % 3 == 0).ToList();
-            Console.Write("List of numbers that divisible by {0} are", 3);
+            //Console.Write("List of numbers that divisible by {0} are", 3);
+            Console.Write("Danh sach cac so chia het cho {0} la", 3);
             foreach (int k in danhsach1)
             {
                 Console.Write(" {0}", k);
             }
+            Console.WriteLine("");
             //4. Find an integer number inputed from keyboard
+            Console.Write("Nhap so ma ban muon tim: ");
             int y = int.Parse(Console.ReadLine());
             int result = danhsach.FirstOrDefault(x => x == y);
-            if (result == null)
+            if (result == 0)
                 Console.WriteLine("Unable to find out {0}", y);
             else
                 Console.WriteLine("{0} was found.", y);
+            
+            Console.ReadLine();
         }
+
     }
 }
