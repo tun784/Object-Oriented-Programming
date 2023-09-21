@@ -37,7 +37,7 @@ namespace LearningList
         public double diemCuoiKy;
 
         //phương thức khởi tạo
-        public MonHocLyThuyet() : base(){}
+        public MonHocLyThuyet() : base();
         public MonHocLyThuyet(string m, string ten, int stc, double d1, double d2) : base(m, ten, stc){
             diemTieuLuan = d1;
             diemCuoiKy = d2;
