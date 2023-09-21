@@ -52,6 +52,9 @@ namespace Class_basic{
                             pet03.Output();
                         }
                         break;
+                    default:{
+                        return Main();
+                    }break;
                 }
 
                 Console.Write("Ban muon tiep tuc khong (Y/N)? ");
