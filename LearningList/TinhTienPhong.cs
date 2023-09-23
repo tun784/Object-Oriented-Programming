@@ -29,14 +29,15 @@ namespace LearningList
         // Phương thức trừu tượng
         public abstract int Tien();
     }
-
     class PhongA : TinhTienPhong
     {
         int SoNguoiThan;
         // get - set
         public int nguoithan { get{ return SoNguoiThan; } set{ SoNguoiThan = value; } }
         // Phương thức khởi tạo
-        public PhongA() : base();
+        public PhongA() : base(){
+            SoNguoiThan = 0;
+        }
         public PhongA(string maso, int songuoio, double sodien, double sonuoc, int songuoithan) : base(maso, songuoio, sodien, sonuoc){
             this.SoNguoiThan = songuoithan;
         }
@@ -45,7 +46,6 @@ namespace LearningList
             return 1400 + 2*soDien + 8*soNuoc + 50*SoNguoiThan;
         }
     }
-    
     class PhongB : TinhTienPhong
     {
         double giatUi;
@@ -54,7 +54,10 @@ namespace LearningList
         public double giatui { get{ return giatUi; } set{ giatUi = value; } }
         public int somay { get{ return soMay; } set{ soMay = value; } }
         //Phương thức khởi tạo
-        public PhongB() : base();
+        public PhongB() : base(){
+            giatUi = 0.0;
+            soMay = 0;
+        }
         public PhongA(string maso, int songuoio, double sodien, double sonuoc, double giatUi, int soMay) : base(maso, songuoio, sodien, sonuoc){
             this.giatUi = giatUi;
             this.soMay = soMay;
