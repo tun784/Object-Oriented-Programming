@@ -2,8 +2,7 @@ using System;
 
 namespace GachBong
 {
-    interface HoTro
-    {
+    interface HoTro{
         double HoTroGia();
     }
 }
