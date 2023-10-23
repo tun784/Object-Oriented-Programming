@@ -4,7 +4,7 @@ using System.Linq;
 using System.IO;
 namespace LearningList
 {
-    class program
+    class Program
     {
         /// <summary>
         /// 1. Sum all elements in the list
@@ -15,7 +15,7 @@ namespace LearningList
         /// </summary>
         static void Main()
         {
-            int option = 0;
+            int option = 1;
             Console.Write("Moi ban chon bai: ");
             option = int.Parse(Console.ReadLine());
             switch (o){
@@ -54,8 +54,7 @@ namespace LearningList
                     List<int> danhsach1 = danhsach.Where(t => t % 3 == 0).ToList();
                     //Console.Write("List of numbers that divisible by {0} are", 3);
                     Console.Write("Danh sach cac so chia het cho {0} la", 3);
-                    foreach (int k in danhsach1)
-                    {
+                    foreach (int k in danhsach1){
                         Console.Write(" {0}", k);
                     }
                     Console.WriteLine("");
