@@ -2,10 +2,9 @@ using System;
 
 namespace Class_basic{
     class Animal{
-        string name;
+        string name, sex;
         int age;
         double height, weight;
-        string sex;
         // get - set
         public string name_{
             get { return name; }
