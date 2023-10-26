@@ -4,13 +4,10 @@ namespace LearningList
 {
     class NhanVien{
         //Thuộc tính
-        string ms;
-        string ten;
+        string ms, ten, pb;
         double hsl;
-        string pb;
         int nvl;
         public static int MLTT = 1210;
-
         public string MaSo { get{ return ms; } set{ ms = value; } }
         public string HoTen { get{ return ten; } set{ ten = value; } }
         public int HeSoLuong { get{ return hsl; } set{ hsl = value; } }

@@ -1,4 +1,0 @@
-C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\LearningList\obj\Debug\net7.0\LearningList.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\LearningList\obj\Debug\net7.0\LearningList.AssemblyInfoInputs.cache
-C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\LearningList\obj\Debug\net7.0\LearningList.AssemblyInfo.cs
-C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\LearningList\obj\Debug\net7.0\LearningList.csproj.CoreCompileInputs.cache
