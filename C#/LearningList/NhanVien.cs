@@ -13,7 +13,6 @@ namespace LearningList
         public int HeSoLuong { get{ return hsl; } set{ hsl = value; } }
         public string PhongBan { get{ return pb; } set{ pb = value; } }
         public int NgayLamViec { get{ return nvl; } set{ nvl = value; } }
-
         //Phước thức xử lý
         public string XepLoai(){
             if (nvl > 25)
