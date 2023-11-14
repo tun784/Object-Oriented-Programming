@@ -1,6 +1,6 @@
 using System;
 
-namespace LearningList
+namespace NhanVien
 {
     class CanBo : NhanVien
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace LearningList
+namespace MonHoc
 {
     abstract class MonHoc
     {

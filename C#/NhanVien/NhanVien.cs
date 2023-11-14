@@ -1,6 +1,6 @@
 using System
 
-namespace LearningList
+namespace NhanVien
 {
     class NhanVien{
         //Thuộc tính

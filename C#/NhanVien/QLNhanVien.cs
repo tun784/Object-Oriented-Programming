@@ -1,6 +1,6 @@
 using System;
 
-namespace LearningList
+namespace NhanVien
 {
     class NhanVien{
         // properties
@@ -47,9 +47,7 @@ namespace LearningList
             return heSoLuong * mucLuongToiThieu;
         }
         double heSoPhuCapThamNiem(){
-            DateTime ngayThang_HienTai = DateTime.Today;
-            int namHienTai = ngayThang_HienTai.Year;
-            return (namHienTai - namVaoLam)*1.0 / 100;
+            return (DateTime.Today.Year - namVaoLam)*1.0 / 100;
         }
         double LuongMoiNhanVien(){
             return LuongCoBan() * heSoPhuCapThamNiem();

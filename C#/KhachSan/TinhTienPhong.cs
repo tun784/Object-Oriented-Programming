@@ -1,6 +1,6 @@
 using System
 
-namespace LearningList
+namespace KhachSan
 {
     abstract class TinhTienPhong
     {
