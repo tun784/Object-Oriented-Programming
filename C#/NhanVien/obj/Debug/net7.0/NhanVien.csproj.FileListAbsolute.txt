@@ -1,0 +1,14 @@
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\bin\Debug\net7.0\NhanVien.exe
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\bin\Debug\net7.0\NhanVien.deps.json
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\bin\Debug\net7.0\NhanVien.runtimeconfig.json
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\bin\Debug\net7.0\NhanVien.dll
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\bin\Debug\net7.0\NhanVien.pdb
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\obj\Debug\net7.0\NhanVien.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\obj\Debug\net7.0\NhanVien.AssemblyInfoInputs.cache
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\obj\Debug\net7.0\NhanVien.AssemblyInfo.cs
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\obj\Debug\net7.0\NhanVien.csproj.CoreCompileInputs.cache
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\obj\Debug\net7.0\NhanVien.dll
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\obj\Debug\net7.0\refint\NhanVien.dll
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\obj\Debug\net7.0\NhanVien.pdb
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\obj\Debug\net7.0\NhanVien.genruntimeconfig.cache
+C:\Users\GIGABYTE\..Data\Visual_Studio_Code\Object_Oriented_Programming\C#\NhanVien\obj\Debug\net7.0\ref\NhanVien.dll

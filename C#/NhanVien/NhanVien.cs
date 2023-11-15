@@ -1,23 +1,38 @@
-using System
+using System;
 
 namespace NhanVien
 {
     class NhanVien{
         //Thuộc tính
-        string ms, ten, pb;
-        double hsl;
-        int nvl;
-        public static int MLTT = 1210;
-        public string MaSo { get{ return ms; } set{ ms = value; } }
-        public string HoTen { get{ return ten; } set{ ten = value; } }
-        public int HeSoLuong { get{ return hsl; } set{ hsl = value; } }
-        public string PhongBan { get{ return pb; } set{ pb = value; } }
-        public int NgayLamViec { get{ return nvl; } set{ nvl = value; } }
-        //Phước thức xử lý
+        string MaSo = "------", HoTen = "------", PhongBan = "------";
+        double HeSoLuong = 0.0;
+        int NamVaoLam = 0;
+        public static int MucLuongToiThieu = 1210;
+        public string Maso { get{ return MaSo; } set{ MaSo = value; } }
+        public string Hoten { get{ return HoTen; } set{ HoTen = value; } }
+        public string Phongban { get{ return PhongBan; } set{ PhongBan = value; } }
+        public double Hesoluong { get{ return HeSoLuong; } set{ HeSoLuong = value; } }
+        public int Namvaolam{ get{ return NamVaoLam; } set{ NamVaoLam = value; } }
+        // Constructors
+        public NhanVien(){
+            Maso = "------";
+            Hoten = "------";
+            Phongban = "------";
+            Hesoluong = 0.0;
+            Namvaolam = 0;
+        }
+        public NhanVien(string Maso, string Hoten, string Phongban, double Hesoluong, int Namvaolam){
+            this.Maso = Maso;
+            this.Hoten = Hoten;
+            this.Phongban = Phongban;
+            this.Hesoluong = Hesoluong;
+            this.Namvaolam = Namvaolam;
+        }
+        // Method
         public string XepLoai(){
-            if (nvl > 25)
+            if (NamVaoLam > 25)
                 return "A";
-            else if (nvl > 22)
+            else if (NamVaoLam > 22)
                 return "B";
             else
                 return "C";
@@ -30,7 +45,7 @@ namespace NhanVien
                 HeSoThiDua = 0.75;
             else
                 HeSoThiDua = 0.50;
-            return MLTT * hsl * HeSoThiDua;
+            return MucLuongToiThieu * HeSoLuong * HeSoThiDua;
         }
     }
 }
