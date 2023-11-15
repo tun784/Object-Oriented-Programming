@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "NhanVien/1.0.0": {
+      "Bai_1_Nhan_Vien/1.0.0": {
         "runtime": {
-          "NhanVien.dll": {}
+          "Bai_1_Nhan_Vien.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "NhanVien/1.0.0": {
+    "Bai_1_Nhan_Vien/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

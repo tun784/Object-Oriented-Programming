@@ -1,8 +1,7 @@
 using System;
-
-namespace NhanVien
+namespace Bai_1_Nhan_Vien
 {
-    class QLNhanVien{
+    class NhanVien{
         // properties
         string maNhanVien = "---", hoTen = "---";
         double heSoLuong = 0.0;
@@ -30,19 +29,19 @@ namespace NhanVien
             }
         }
         // constructors
-        public QLNhanVien(){
+        public NhanVien(){
             MaNV = "---";
             HoTen = "---";
             hsl = 0;
             nvl = 0;
         }
-        public QLNhanVien(string MaNV, string HoTen, double hsl, int nvl){
+        public NhanVien(string MaNV, string HoTen, double hsl, int nvl){
             this.MaNV = MaNV;
             this.HoTen = HoTen;
             this.hsl = hsl;
             this.nvl = nvl;
         }
-        // Method
+        // Methods
         public void Nhap(){
             System.Console.Write("Nhap ma so nhan vien: ");
             MaNV = Console.ReadLine();
@@ -54,7 +53,7 @@ namespace NhanVien
             nvl = int.Parse(Console.ReadLine());
         }
         public void Xuat(){
-            System.Console.WriteLine("\t{0}\t{1}\t{2}\t{3}", maNhanVien, hoTen, heSoLuong, namVaoLam);
+            System.Console.WriteLine("\n\t{0}\t{1}\t{2}\t{3}", maNhanVien, hoTen, heSoLuong, namVaoLam);
         }
         public double LuongCoBan(){
             return heSoLuong * mucLuongToiThieu;
@@ -62,7 +61,7 @@ namespace NhanVien
         public double heSoPhuCapThamNiem(){
             return (DateTime.Today.Year - namVaoLam)*1.0 / 100;
         }
-        public double LuongMoiNhanVien(){
+        public double Luong(){
             return LuongCoBan() * heSoPhuCapThamNiem();
         }
     }

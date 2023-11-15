@@ -3,36 +3,36 @@ using System;
 namespace NhanVien
 {
     class NhanVien{
-        //Thuộc tính
-        string MaSo = "------", HoTen = "------", PhongBan = "------";
-        double HeSoLuong = 0.0;
-        int NamVaoLam = 0;
+        // Properties
+        string Ma_So = "------", Ho_Ten = "------", Phong_Ban = "------";
+        double He_So_Luong = 0.0;
+        int Nam_Vao_Lam = 0;
         public static int MucLuongToiThieu = 1210;
-        public string Maso { get{ return MaSo; } set{ MaSo = value; } }
-        public string Hoten { get{ return HoTen; } set{ HoTen = value; } }
-        public string Phongban { get{ return PhongBan; } set{ PhongBan = value; } }
-        public double Hesoluong { get{ return HeSoLuong; } set{ HeSoLuong = value; } }
-        public int Namvaolam{ get{ return NamVaoLam; } set{ NamVaoLam = value; } }
+        public string MaSo { get{ return Ma_So; } set{ Ma_So = value; } }
+        public string HoTen { get{ return Ho_Ten; } set{ Ho_Ten = value; } }
+        public string PhongBan { get{ return Phong_Ban; } set{ Phong_Ban = value; } }
+        public double HeSoLuong { get{ return He_So_Luong; } set{ He_So_Luong = value; } }
+        public int NamVaoLam{ get{ return Nam_Vao_Lam; } set{ Nam_Vao_Lam = value; } }
         // Constructors
         public NhanVien(){
-            Maso = "------";
-            Hoten = "------";
-            Phongban = "------";
-            Hesoluong = 0.0;
-            Namvaolam = 0;
+            MaSo = "------";
+            HoTen = "------";
+            PhongBan = "------";
+            HeSoLuong = 0.0;
+            NamVaoLam = 0;
         }
-        public NhanVien(string Maso, string Hoten, string Phongban, double Hesoluong, int Namvaolam){
-            this.Maso = Maso;
-            this.Hoten = Hoten;
-            this.Phongban = Phongban;
-            this.Hesoluong = Hesoluong;
-            this.Namvaolam = Namvaolam;
+        public NhanVien(string MaSo, string HoTen, string PhongBan, double HeSoLuong, int NamVaoLam){
+            this.MaSo = MaSo;
+            this.HoTen = HoTen;
+            this.PhongBan = PhongBan;
+            this.HeSoLuong = HeSoLuong;
+            this.NamVaoLam = NamVaoLam;
         }
-        // Method
+        // Methods
         public string XepLoai(){
-            if (NamVaoLam > 25)
+            if (Nam_Vao_Lam > 25)
                 return "A";
-            else if (NamVaoLam > 22)
+            else if (Nam_Vao_Lam > 22)
                 return "B";
             else
                 return "C";
@@ -45,7 +45,7 @@ namespace NhanVien
                 HeSoThiDua = 0.75;
             else
                 HeSoThiDua = 0.50;
-            return MucLuongToiThieu * HeSoLuong * HeSoThiDua;
+            return MucLuongToiThieu * He_So_Luong * HeSoThiDua;
         }
     }
 }
