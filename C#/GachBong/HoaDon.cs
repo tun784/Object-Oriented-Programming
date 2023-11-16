@@ -2,8 +2,7 @@ using System;
 
 namespace GachBong
 {
-    abstract class HoaDon
-    {
+    abstract class HoaDon{
         // properties
         protected string maHoaDon;
         public string MaHD
@@ -19,8 +18,8 @@ namespace GachBong
         public string tenGachBong;
         public double chieuDai;
         public double chieuRong;
-        protected unsigned int soLuong;
-        public unsigned int SL
+        protected int soLuong;
+        public int SL
         {
             get { return soLuong; }
             set{
@@ -31,7 +30,7 @@ namespace GachBong
             }
         }
         public double donGia;
-        public static double tyLe_VAT = 0.1 ;
+        public static double tyLe_VAT = 0.1;
         // constructors
         public HoaDon(){
             maHoaDon = "HD0001";
@@ -41,7 +40,7 @@ namespace GachBong
             soLuong = 1200;
             donGia = 60.0;
         }
-        public HoaDon(string mahoadon, string tengachbong, double chieudai, double chieurong, unsigned int soluong, double dongia){
+        public HoaDon(string mahoadon, string tengachbong, double chieudai, double chieurong, int soluong, double dongia){
             this.maHoaDon = mahoadon;
             this.tenGachBong = tengachbong;
             this.chieuDai = chieudai;
@@ -53,27 +52,26 @@ namespace GachBong
         public double TongTien(){
             return soLuong * donGia - GiamGia();
         }
-        public abstract double Thue();
-            //return tyLe_VAT * TongTien() * ThueNhapKhau();
+        public virtual double ThueNhapKhau(){
+            return 0.0;
+        }
+        public virtual double Thue(){
+            return tyLe_VAT * TongTien() + ThueNhapKhau();
+        }
         public virtual void Nhap(){
             try{
                 Console.Write("Vui long nhap ma hoa don: ");
                 MaHD = Console.ReadLine();
-
                 Console.Write("Vui long nhap ten gach bong: ");
                 tenGachBong = Console.ReadLine();
-
-                Console.Write("Vui long nhap chieu dai: ");
-                chieuDai = double.Parse(Console.ReadLine());
-
-                Console.Write("Vui long nhap chieu rong: ");
-                chieuRong = double.Parse(Console.ReadLine());
-
-                Console.Write("Vui long nhap so luong: ");
+                Console.Write("Vui long nhap chieu dai (cm): ");
+                chieuDai = double.Parse(Console.ReadLine().Replace('.', ','));
+                Console.Write("Vui long nhap chieu rong (cm): ");
+                chieuRong = double.Parse(Console.ReadLine().Replace('.', ','));
+                Console.Write("Vui long nhap so luong (cai): ");
                 SL = int.Parse(Console.ReadLine());
-
-                Console.Write("Vui long nhap don gia: ");
-                donGia = double.Parse(Console.ReadLine());
+                Console.Write("Vui long nhap don gia (dong): ");
+                donGia = double.Parse(Console.ReadLine().Replace('.', ','));
             }
             catch (FormatException){
                 Console.WriteLine("Nhap sai dinh dang. Vui long nhap lai.");
@@ -81,12 +79,14 @@ namespace GachBong
             }
         }
         public void Xuat(){
-            Console.WriteLine($"Ma hoa don: {maHoaDon}"); // Fixed syntax error here
+            Console.WriteLine($"Ma hoa don: {maHoaDon}");
             Console.WriteLine($"Ten gach bong: {tenGachBong}");
-            Console.WriteLine($"Chieu dai: {chieuDai}");
-            Console.WriteLine($"Chieu rong: {chieuRong}");
+            Console.WriteLine($"Chieu dai: {chieuDai} cm");
+            Console.WriteLine($"Chieu rong: {chieuRong} cm");
             Console.WriteLine($"So luong: {soLuong} cai.");
-            Console.WriteLine($"Don gia: {donGia}");
+            Console.WriteLine($"Don gia: {donGia} dong");
+            Console.WriteLine("Tong tien: {0} dong", TongTien());
+            Console.WriteLine("Thue: {0} dong", Thue());
         }
     }
 }
