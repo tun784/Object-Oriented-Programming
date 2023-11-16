@@ -78,15 +78,15 @@ namespace GachBong
                 // Có thể thêm các xử lý khác tùy vào yêu cầu của bài toán
             }
         }
-        public void Xuat(){
+        public virtual void Xuat(){
             Console.WriteLine($"Ma hoa don: {maHoaDon}");
             Console.WriteLine($"Ten gach bong: {tenGachBong}");
             Console.WriteLine($"Chieu dai: {chieuDai} cm");
             Console.WriteLine($"Chieu rong: {chieuRong} cm");
             Console.WriteLine($"So luong: {soLuong} cai.");
-            Console.WriteLine($"Don gia: {donGia} dong");
-            Console.WriteLine("Tong tien: {0} dong", TongTien());
-            Console.WriteLine("Thue: {0} dong", Thue());
+            Console.WriteLine("Don gia: {0:0.000} dong", donGia);
+            Console.WriteLine("Tong tien: {0:0.000} dong", TongTien());
+            Console.WriteLine("Thue: {0:0.000} dong", Thue());
         }
     }
 }

@@ -5,10 +5,18 @@ namespace GachBong
     class HDngoaiNhap : HoaDon{
         public string noiSanXuat;
         public int chatLuong; //1, 2, 3
-        public static double thueNhapKhau = 0.05;
         protected string NSX1 = "Italia";
         protected string NSX2 = "Japan";
-        protected int loai1 = 1, loai2 = 2, loai3 = 3;
+        public static double thueNhapKhau = 0.05;
+        protected static int loai1 = 1, loai2 = 2, loai3 = 3;
+        public HDngoaiNhap() : base(){
+            noiSanXuat = "China";
+            chatLuong = 3;
+        }
+        public HDngoaiNhap(string mahoadon, string tengachbong, double chieudai, double chieurong, int soluong, double dongia, string noisanxuat, int chatluong) : base(mahoadon, tengachbong, chieudai, chieurong, soluong, dongia){
+            this.noiSanXuat = noisanxuat;
+            this.chatLuong = chatluong;
+        }
         public override double GiamGia(){
             if (noiSanXuat == NSX1 || noiSanXuat == NSX2)
                 return donGia * 0.0;
@@ -28,18 +36,6 @@ namespace GachBong
         }
         public override void Nhap(){
             try{
-                // Console.Write("Vui long nhap ma hoa don: ");
-                // MaHD = Console.ReadLine();
-                // Console.Write("Vui long nhap ten gach bong: ");
-                // tenGachBong = Console.ReadLine();
-                // Console.Write("Vui long nhap chieu dai (cm): ");
-                // chieuDai = double.Parse(Console.ReadLine());
-                // Console.Write("Vui long nhap chieu rong (cm): ");
-                // chieuRong = double.Parse(Console.ReadLine());
-                // Console.Write("Vui long nhap so luong: ");
-                // SL = int.Parse(Console.ReadLine());
-                // Console.Write("Vui long nhap don gia: ");
-                // donGia = double.Parse(Console.ReadLine());
                 base.Nhap();
                 Console.Write("Vui long nhap noi san xuat: ");
                 noiSanXuat = Console.ReadLine();
@@ -50,6 +46,11 @@ namespace GachBong
                 Console.WriteLine("Nhap sai dinh dang. Vui long nhap lai.");
                 // Có thể thêm các xử lý khác tùy vào yêu cầu của bài toán
             }
+        }
+        public override void Xuat(){
+            base.Xuat();
+            Console.WriteLine($"Noi san xuat: {noiSanXuat}");
+            Console.WriteLine($"Chat luong: loai {chatLuong}");
         }
     }
 }
