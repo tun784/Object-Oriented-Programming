@@ -82,7 +82,7 @@ namespace Bai_1_Nhan_Vien
             Console.WriteLine("\tHo va ten: {0}", hoTen);
             Console.WriteLine("\tHe so luong: {0}", heSoLuong);
             Console.WriteLine("\tNam vao lam: {0}", namVaoLam);
-            Console.WriteLine("\tLuong: {0}", Luong());
+            Console.WriteLine("\tLuong: {0:0.00}", Luong());
         }
     }
 }
