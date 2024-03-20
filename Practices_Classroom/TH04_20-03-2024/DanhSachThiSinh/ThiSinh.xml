@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DanhSach>
+  <TS>
+    <SBD>2</SBD>
+    <HoTen>Lam Thi Hoa Mi</HoTen>
+  </TS>
+  <TS>
+    <SBD>1</SBD>
+    <HoTen>Duong Thi Mong Thuy</HoTen>
+  </TS>
+  <TS>
+    <SBD>1</SBD>
+    <HoTen>Nguyen Thi Thuy Trang</HoTen>
+  </TS>
+  <TS>
+    <SBD>1</SBD>
+    <HoTen>Nguyen Van Thinh</HoTen>
+  </TS>
+</DanhSach>
