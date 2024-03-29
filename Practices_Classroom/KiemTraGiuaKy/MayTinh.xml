@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Maytinhs>
+  <Maytinh>
+    <Ma>MT02</Ma>
+    <Ten>Dell</Ten>
+    <NamSX>2013</NamSX>
+    <MauSac>Do</MauSac>
+    <SoLuong>2</SoLuong>
+    <DonGia>10000</DonGia>
+  </Maytinh>
+  <Maytinh>
+    <Ma>MT05</Ma>
+    <Ten>Asus</Ten>
+    <NamSX>2023</NamSX>
+    <MauSac>Den</MauSac>
+    <SoLuong>7</SoLuong>
+    <DonGia>20000</DonGia>
+  </Maytinh>
+  <Maytinh>
+    <Ma>MT07</Ma>
+    <Ten>HP</Ten>
+    <NamSX>2019</NamSX>
+    <MauSac>Trang</MauSac>
+    <SoLuong>15</SoLuong>
+    <DonGia>40000</DonGia>
+  </Maytinh>
+  <Maytinh>
+    <Ma>MT12</Ma>
+    <Ten>MacBook</Ten>
+    <NamSX>2023</NamSX>
+    <MauSac>Trang</MauSac>
+    <SoLuong>12</SoLuong>
+    <DonGia>100000</DonGia>
+  </Maytinh>
+</Maytinhs>
