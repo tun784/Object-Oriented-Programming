@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DSNV>
+  <NV>
+    <LoaiNV>1</LoaiNV>
+    <Ma>nv0001</Ma>
+    <Ten>Nguyen Ngoc Nguyet Nhi</Ten>
+    <NamSinh>2004</NamSinh>
+    <GioiTinh>Nu</GioiTinh>
+    <HSL>1.1</HSL>
+    <NamVaoLam>2026</NamVaoLam>
+    <SoNgayNghi>1</SoNgayNghi>
+  </NV>
+  <NV>
+    <LoaiNV>2</LoaiNV>
+    <Ma>nv0002</Ma>
+    <Ten>Nguyen Hoang Tuan</Ten>
+    <NamSinh>2004</NamSinh>
+    <GioiTinh>Nam</GioiTinh>
+    <HSL>1.2</HSL>
+    <NamVaoLam>2029</NamVaoLam>
+    <DoanhSo>50</DoanhSo>
+    <DoanhSoToiThieu>30</DoanhSoToiThieu>
+  </NV>
+  <NV>
+    <LoaiNV>3</LoaiNV>
+    <Ma>nv0003</Ma>
+    <Ten>Bui Kim Hai</Ten>
+    <NamSinh>2004</NamSinh>
+    <GioiTinh>Nam</GioiTinh>
+    <HSL>0.9</HSL>
+    <NamVaoLam>2019</NamVaoLam>
+    <ChucVu>NhanVienQuen</ChucVu>
+    <HeSoChucVu>2</HeSoChucVu>
+  </NV>
+  <NV>
+    <LoaiNV>1</LoaiNV>
+    <Ma>nv0004</Ma>
+    <Ten>Luong Thanh Binh</Ten>
+    <NamSinh>2004</NamSinh>
+    <GioiTinh>Nam</GioiTinh>
+    <HSL>1.1</HSL>
+    <NamVaoLam>2022</NamVaoLam>
+    <SoNgayNghi>5</SoNgayNghi>
+  </NV>
+  <NV>
+    <LoaiNV>2</LoaiNV>
+    <Ma>nv0005</Ma>
+    <Ten>Luu Hoang Phuc</Ten>
+    <NamSinh>2004</NamSinh>
+    <GioiTinh>Nam</GioiTinh>
+    <HSL>1.4</HSL>
+    <NamVaoLam>2027</NamVaoLam>
+    <DoanhSo>10</DoanhSo>
+    <DoanhSoToiThieu>20</DoanhSoToiThieu>
+  </NV>
+  <NV>
+    <LoaiNV>3</LoaiNV>
+    <Ma>nv0006</Ma>
+    <Ten>Thach Quoc Dien</Ten>
+    <NamSinh>2004</NamSinh>
+    <GioiTinh>Nam</GioiTinh>
+    <HSL>0.8</HSL>
+    <NamVaoLam>2018</NamVaoLam>
+    <ChucVu>Sep</ChucVu>
+    <HeSoChucVu>1.5</HeSoChucVu>
+  </NV>
+</DSNV>

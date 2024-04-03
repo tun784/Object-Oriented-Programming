@@ -7,42 +7,21 @@ using System.Threading.Tasks;
 namespace DanhSachThiSinh
 {
     public class ThiSinh
-    {
-        string soBaoDanh;
-        string tenThiSinh;
+    {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+        string hoTen, soBaoDanh;
         int namSinh;
-        double diemToan;
-        double diemVan;
-        double diemNgoaiNgu;
-        public static int diemChuan = 25;
-        public double DiemNgoaiNgu
-        {
-            get { return diemNgoaiNgu; }
-            set { diemNgoaiNgu = value; }
-        }
-
-        public double DiemVan
-        {
-            get { return diemVan; }
-            set { diemVan = value; }
-        }
-
-        public double DiemToan
-        {
-            get { return diemToan; }
-            set { diemToan = value; }
-        }
 
         public int NamSinh
         {
             get { return namSinh; }
             set { namSinh = value; }
         }
+        double diemToan, diemVan, diemNgoaiNgu;
 
-        public string TenThiSinh
+        public string HoTen
         {
-            get { return tenThiSinh; }
-            set { tenThiSinh = value; }
+            get { return hoTen; }
+            set { hoTen = value; }
         }
 
         public string SoBaoDanh
@@ -51,27 +30,53 @@ namespace DanhSachThiSinh
             set { soBaoDanh = value; }
         }
 
-        public ThiSinh() { }
-        public ThiSinh(string soBaoDanh, string tenThiSinh, int namSinh, double diemToan, double diemVan, double diemNgoaiNgu)
+        public double DiemToan
         {
-            this.soBaoDanh = soBaoDanh;
-            this.tenThiSinh = tenThiSinh;
-            this.namSinh = namSinh;
-            this.diemToan = diemToan;
-            this.diemVan = diemVan;
-            this.diemNgoaiNgu = diemNgoaiNgu;
+            get { return diemToan; }
+            set { diemToan = value; }
         }
 
-        public double TongDiem()
+        public double DiemVan
         {
-            return (double)diemNgoaiNgu * 2 + diemToan + diemVan;
+            get { return diemVan; }
+            set { diemVan = value; }
         }
-        public string KetQua()
+
+        public double DiemNgoaiNgu
         {
-            if (TongDiem() > 25)
-                return "Dau";
-            else
-                return "Rot";
+            get { return diemNgoaiNgu; }
+            set { diemNgoaiNgu = value; }
+        }
+        static double diemChuan = 25;
+        public ThiSinh()
+        {
+            hoTen = "Nguyen Van A";
+            soBaoDanh = "TS01";
+            namSinh = 2000;
+            diemToan = diemVan = diemNgoaiNgu = 0;
+        }
+        public ThiSinh(string hoten, string sbd, int ns, double dt, double dv, double dnn)
+        {
+            HoTen = hoten;
+            namSinh = ns;
+            SoBaoDanh = sbd;
+            DiemToan = dt;
+            DiemVan = dv;
+            DiemNgoaiNgu = dnn;
+        }
+        public double TongDiem
+        {
+            get { return diemToan + diemVan + diemNgoaiNgu * 2; }
+        }
+        public string KetQua
+        {
+            get
+            {
+                if (TongDiem < diemChuan)
+                    return "Rot";
+                else
+                    return "Dau";
+            }
         }
         public void Nhap1TS()
         {
@@ -88,10 +93,9 @@ namespace DanhSachThiSinh
             Console.Write("Nhap diem ngoai ngu: ");
             diemNgoaiNgu = double.Parse(Console.ReadLine());
         }
-        public void Xuat1TS()
+        public void Xuat()
         {
-            Console.WriteLine("SBD: {0} - Ho ten: {1} - Nam sinh: {2}", soBaoDanh, tenThiSinh, namSinh);
-            Console.WriteLine("Diem Toan: {0:0.00} - Diem Van: {1:0.00} - Diem Ngoai Ngu: {2:0.00}", diemToan, diemVan, diemNgoaiNgu);
+            Console.WriteLine("{0,5}\t{1,-20}\t{2,5}\t{3:0.0}\t{4:0.0}\t{5:0.0}\t{6}\t{7}", soBaoDanh, hoTen, namSinh, diemToan, diemVan, diemNgoaiNgu, TongDiem, KetQua);
         }
     }
 }
