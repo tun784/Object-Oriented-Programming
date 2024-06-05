@@ -1,7 +1,0 @@
-C:\Users\GIGABYTE\OneDrive - Ho Chi Minh city University of Industry and Trade\Documents\Src\VS Code\Object-Oriented-Programming\Practices_Classroom\TH08_10-04-2024\Bai2\bin\Debug\Bai2.exe.config
-C:\Users\GIGABYTE\OneDrive - Ho Chi Minh city University of Industry and Trade\Documents\Src\VS Code\Object-Oriented-Programming\Practices_Classroom\TH08_10-04-2024\Bai2\bin\Debug\Bai2.exe
-C:\Users\GIGABYTE\OneDrive - Ho Chi Minh city University of Industry and Trade\Documents\Src\VS Code\Object-Oriented-Programming\Practices_Classroom\TH08_10-04-2024\Bai2\bin\Debug\Bai2.pdb
-C:\Users\GIGABYTE\OneDrive - Ho Chi Minh city University of Industry and Trade\Documents\Src\VS Code\Object-Oriented-Programming\Practices_Classroom\TH08_10-04-2024\Bai2\obj\Debug\Bai2.csproj.AssemblyReference.cache
-C:\Users\GIGABYTE\OneDrive - Ho Chi Minh city University of Industry and Trade\Documents\Src\VS Code\Object-Oriented-Programming\Practices_Classroom\TH08_10-04-2024\Bai2\obj\Debug\Bai2.csproj.CoreCompileInputs.cache
-C:\Users\GIGABYTE\OneDrive - Ho Chi Minh city University of Industry and Trade\Documents\Src\VS Code\Object-Oriented-Programming\Practices_Classroom\TH08_10-04-2024\Bai2\obj\Debug\Bai2.exe
-C:\Users\GIGABYTE\OneDrive - Ho Chi Minh city University of Industry and Trade\Documents\Src\VS Code\Object-Oriented-Programming\Practices_Classroom\TH08_10-04-2024\Bai2\obj\Debug\Bai2.pdb

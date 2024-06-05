@@ -1,6 +1,0 @@
-E:\NguyenHoangTuan_2001224555_03-04-2024\TH07_03-04-2024\bin\Debug\TH07_03-04-2024.exe.config
-E:\NguyenHoangTuan_2001224555_03-04-2024\TH07_03-04-2024\bin\Debug\TH07_03-04-2024.exe
-E:\NguyenHoangTuan_2001224555_03-04-2024\TH07_03-04-2024\bin\Debug\TH07_03-04-2024.pdb
-E:\NguyenHoangTuan_2001224555_03-04-2024\TH07_03-04-2024\obj\Debug\TH07_03-04-2024.csprojResolveAssemblyReference.cache
-E:\NguyenHoangTuan_2001224555_03-04-2024\TH07_03-04-2024\obj\Debug\TH07_03-04-2024.exe
-E:\NguyenHoangTuan_2001224555_03-04-2024\TH07_03-04-2024\obj\Debug\TH07_03-04-2024.pdb

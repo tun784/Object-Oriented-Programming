@@ -6,7 +6,7 @@
     <Ten>Nguyen Ngoc Nguyet Nhi</Ten>
     <NamSinh>2004</NamSinh>
     <GioiTinh>Nu</GioiTinh>
-    <HSL>1.1</HSL>
+    <HSL>1,1</HSL>
     <NamVaoLam>2026</NamVaoLam>
     <SoNgayNghi>1</SoNgayNghi>
   </NV>
@@ -16,7 +16,7 @@
     <Ten>Nguyen Hoang Tuan</Ten>
     <NamSinh>2004</NamSinh>
     <GioiTinh>Nam</GioiTinh>
-    <HSL>1.2</HSL>
+    <HSL>1,2</HSL>
     <NamVaoLam>2029</NamVaoLam>
     <DoanhSo>50</DoanhSo>
     <DoanhSoToiThieu>30</DoanhSoToiThieu>
@@ -27,7 +27,7 @@
     <Ten>Bui Kim Hai</Ten>
     <NamSinh>2004</NamSinh>
     <GioiTinh>Nam</GioiTinh>
-    <HSL>0.9</HSL>
+    <HSL>0,9</HSL>
     <NamVaoLam>2019</NamVaoLam>
     <ChucVu>NhanVienQuen</ChucVu>
     <HeSoChucVu>2</HeSoChucVu>
@@ -38,7 +38,7 @@
     <Ten>Luong Thanh Binh</Ten>
     <NamSinh>2004</NamSinh>
     <GioiTinh>Nam</GioiTinh>
-    <HSL>1.1</HSL>
+    <HSL>1,1</HSL>
     <NamVaoLam>2022</NamVaoLam>
     <SoNgayNghi>5</SoNgayNghi>
   </NV>
@@ -48,7 +48,7 @@
     <Ten>Luu Hoang Phuc</Ten>
     <NamSinh>2004</NamSinh>
     <GioiTinh>Nam</GioiTinh>
-    <HSL>1.4</HSL>
+    <HSL>1,4</HSL>
     <NamVaoLam>2027</NamVaoLam>
     <DoanhSo>10</DoanhSo>
     <DoanhSoToiThieu>20</DoanhSoToiThieu>
@@ -59,9 +59,9 @@
     <Ten>Thach Quoc Dien</Ten>
     <NamSinh>2004</NamSinh>
     <GioiTinh>Nam</GioiTinh>
-    <HSL>0.8</HSL>
+    <HSL>0,8</HSL>
     <NamVaoLam>2018</NamVaoLam>
     <ChucVu>Sep</ChucVu>
-    <HeSoChucVu>1.5</HeSoChucVu>
+    <HeSoChucVu>1,5</HeSoChucVu>
   </NV>
 </DSNV>

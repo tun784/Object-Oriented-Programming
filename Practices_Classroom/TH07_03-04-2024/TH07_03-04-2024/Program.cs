@@ -12,7 +12,7 @@ namespace TH07_03_04_2024
         static void Main(string[] args)
         {
             DanhSachNhanVien dsnv = new DanhSachNhanVien();
-            string file = "NhanVien.xml";
+            string file = "../../NhanVien.xml";
             dsnv.NhapDSNV(file);
             dsnv.XuatDSNV();
             Console.ReadLine();
